@@ -1,12 +1,12 @@
 import streamlit as st
 
 # 이모지 사전
-title_emojis = "\U0001F9D1\u200D\U0001F4BB \U0001F4C8 \U0001F393"
+title_emojis = "🧑‍💻 📈 🎓"
 mbti_emojis = {
-    "INTJ": "\U0001F9E0", "INTP": "\U0001F52C", "ENTJ": "\U0001F4BC", "ENTP": "\U0001F3A4",
-    "INFJ": "\U0001F4D6", "INFP": "\U0001F3B6", "ENFJ": "\U0001F91D", "ENFP": "\U0001F680",
-    "ISTJ": "\U0001F4DA", "ISFJ": "\U0001F33C", "ESTJ": "\U0001F4CB", "ESFJ": "\U0001F37D\ufe0f",
-    "ISTP": "\U0001F527", "ISFP": "\U0001F3A8", "ESTP": "\U0001F3CE\ufe0f", "ESFP": "\U0001F389"
+    "INTJ": "🧠", "INTP": "🔬", "ENTJ": "💼", "ENTP": "🎤",
+    "INFJ": "📖", "INFP": "🎶", "ENFJ": "🤝", "ENFP": "🚀",
+    "ISTJ": "📚", "ISFJ": "🌼", "ESTJ": "📋", "ESFJ": "🍽️",
+    "ISTP": "🔧", "ISFP": "🎨", "ESTP": "🏎️", "ESFP": "🎉"
 }
 
 career_recommendations = {
@@ -43,19 +43,19 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("## \U0001F4D1 MBTI 유형을 선택하세요!")
+st.markdown("## 📑 MBTI 유형을 선택하세요!")
 selected_mbti = st.selectbox("", list(mbti_emojis.keys()), index=0, format_func=lambda x: f"{x} {mbti_emojis[x]}")
 
 if selected_mbti:
     st.markdown(f"### 당신의 MBTI: {selected_mbti} {mbti_emojis[selected_mbti]}")
     st.markdown("---")
-    st.markdown(f"## \U0001F4C6 추천 직업 \U0001F680")
+    st.markdown(f"## 📆 추천 직업 🚀")
 
     for job in career_recommendations[selected_mbti]:
-        st.markdown(f"- \U0001F449 **{job}**")
+        st.markdown(f"- 👉 **{job}**")
 
     st.markdown("---")
-    st.info("이 결과는 참고용이며, 다양한 경험과 탐색을 통해 자신의 진로를 구체화해보세요! \U0001F4DA")
+    st.info("이 결과는 참고용이며, 다양한 경험과 탐색을 통해 자신의 진로를 구체화해보세요! 📚")
 
 st.markdown("\n\n")
 st.caption("Made with ❤️ by Notischool")
