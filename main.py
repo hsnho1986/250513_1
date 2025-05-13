@@ -30,13 +30,6 @@ career_recommendations = {
 
 st.set_page_config(page_title="MBTI 직업 추천기", page_icon="🤝")
 st.title(f"{title_emojis} MBTI 기반 진로 추천기")
-
-# ✨ 여기! 아래 코드를 삽입하세요
-st.markdown("""<움직이는 장식 코드>""", unsafe_allow_html=True)
-st.set_page_config(page_title="MBTI 직업 추천기", page_icon="🤝")
-st.title(f"{title_emojis} MBTI 기반 진로 추천기")
-
-
 st.markdown("""
 <style>
     .stApp {
