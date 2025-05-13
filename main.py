@@ -50,7 +50,7 @@ if selected_mbti:
     st.markdown(f"### 당신의 MBTI: {selected_mbti} {mbti_emojis[selected_mbti]}")
     st.markdown("---")
     # MBTI별 유머러스한 학생 특징
-mbti_descriptions = {
+    mbti_descriptions = {
     "INTJ": "조용히 교실 한켠에서 미래 교육 제도를 설계 중인 전략가. 친구보다는 계획표를 더 사랑함.",
     "INTP": "질문은 많고 대답은 적다. 혼잣말로 실험하고, 급식 반찬에서 분자 구조를 유추함.",
     "ENTJ": "조별과제 리더 예약. 모두가 쉬는 시간에도 회의자료 만드는 야망꾼.",
